@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/ylab/static/css/main.337a496e.css",
-    "main.js": "/ylab/static/js/main.6dc78f63.js",
+    "main.js": "/ylab/static/js/main.defc21d9.js",
     "index.html": "/ylab/index.html",
     "main.337a496e.css.map": "/ylab/static/css/main.337a496e.css.map",
-    "main.6dc78f63.js.map": "/ylab/static/js/main.6dc78f63.js.map"
+    "main.defc21d9.js.map": "/ylab/static/js/main.defc21d9.js.map"
   },
   "entrypoints": [
     "static/css/main.337a496e.css",
-    "static/js/main.6dc78f63.js"
+    "static/js/main.defc21d9.js"
   ]
 }
