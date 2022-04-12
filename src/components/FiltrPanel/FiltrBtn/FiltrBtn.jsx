@@ -25,7 +25,7 @@ function getService() {
 const FiltrBtn = () => {
   return (
     <div className={s.filtrBtn} type="button" onClick={getService}>
-      Фильтры
+      Инструмент
     </div>
   );
 }

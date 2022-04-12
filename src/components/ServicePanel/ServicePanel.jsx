@@ -6,7 +6,7 @@ const ServicePanel = () => {
   return (
     <div className={s.servicePanel}>
       <div className={s.serviceCaption}>
-        Заголовок сервиса
+        Заголовок инструмента
       </div>
       <div className={s.servicePanelItem}>
         <ServiceItem />
