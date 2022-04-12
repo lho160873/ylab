@@ -12,5 +12,11 @@
 }
 
 .filtrBtn:active {
-    color: rgb(179, 32, 32);
+    color: white;
+    background-color: gray;
+  }
+
+.filtrBtn:hover{
+    color: white;   
+    background-color: gray;
   }

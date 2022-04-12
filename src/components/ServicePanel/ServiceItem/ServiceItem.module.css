@@ -8,3 +8,7 @@
         height: 100px;
         width: 200px;
 }
+.serviceItem:hover{
+        color: white;   
+        background-color: rgb(212, 212, 212);
+      }
