@@ -1,0 +1,10 @@
+.serviceItem {
+        background-color: white;
+        border-color: silver;
+        margin: -1px;
+        padding: 20px;
+        border-width: 1px;
+        border-style: solid;
+        height: 100px;
+        width: 200px;
+}

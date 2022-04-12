@@ -1,0 +1,8 @@
+.header {
+    float: left;
+    background-color: #404042;
+    color: #C0C0C0;
+    width: 100%;
+    padding: 6px;
+    position: fixed;
+}

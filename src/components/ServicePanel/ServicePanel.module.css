@@ -1,0 +1,26 @@
+.servicePanel {
+    display: flex;
+    flex-flow: column;
+    align-content: space-around;
+    background-color: #eeeeee;
+    padding: 10px;
+    margin: 10px;
+    flex: content;
+}
+
+.serviceCaption {
+    color: #33cccc;
+    font-weight:bold;
+    text-transform:uppercase;
+    font-size: larger;
+    background-color:white;
+    margin-bottom: 10px;
+}
+
+.servicePanelItem {
+    display: flex;
+    flex-flow: row wrap;
+    align-content: space-around;
+    background-color: #eeeeee;
+    flex: content;
+}

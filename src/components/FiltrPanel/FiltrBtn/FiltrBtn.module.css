@@ -1,0 +1,13 @@
+.filtrBtn {
+    background-color: white;
+    margin: 10px;
+    border-color: silver;
+    text-transform:uppercase;
+    color: silver;
+    padding: 10px;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 20px;
+    padding: 10px;
+    margin: 10px;
+}

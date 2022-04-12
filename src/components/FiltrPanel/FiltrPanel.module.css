@@ -1,0 +1,23 @@
+.filtrPanel {
+    display: flex;
+    flex-flow: row;
+    background-color: #eeeeee;
+    padding: 10px;
+    margin: 10px;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+.filtrpanelCaption {
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    background-color: white;
+    font-size:xx-large;
+}
+
+.filtrpanelBtn {
+    display: flex;
+    flex-flow: row wrap;
+    background-color: #eeeeee;
+}

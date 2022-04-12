@@ -1,15 +1,23 @@
-import logo from './logo.svg';
 import './App.css';
+import Header from './components/Header/Header';
+import FiltrPanel from './components/FiltrPanel/FiltrPanel';
+import ServicePanel from './components/ServicePanel/ServicePanel';
+
 
 const App = () => {
   return (
     <div className="App">
-      Привет мир!
-      <ul>
-        <li>Меню 1</li>
-        <li>Меню 2</li>
-        <li>Меню 3</li>
-        </ul>
+      <Header />
+      <div className='contanerMain'>
+
+        <FiltrPanel />
+
+
+        <ServicePanel />
+        <ServicePanel />
+        <ServicePanel />
+
+      </div>
     </div>
   );
 }

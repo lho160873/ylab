@@ -1,8 +1,25 @@
-.App{
-  color: green;
-  font-size:larger;
+.App {
+  font-size: larger;
 }
-ul li{
-  color:red;
-  font-size:small;
+
+.contanerMain {
+  display: flex;
+  flex-flow: column;
+  padding: 60px 30px 30px 30px;
+
+}
+
+.contanerColumn {
+  display: flex;
+  flex-flow: column;
+
+}
+
+.contanerRow {
+  display: flex;
+  flex-flow: row;
+  background-color: antiquewhite;
+  padding: 10px;
+  margin: 10px;
+
 }
