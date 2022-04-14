@@ -1,5 +1,7 @@
 import React from 'react';
 import s from './FiltrBtn.module.css';
+import { NavLink } from 'react-router-dom';
+import {filtrs} from '../../../data/FiltrData/FiltrData'
 
 function getService() {
   /*const myList = document.querySelector('tbody');
@@ -19,13 +21,22 @@ function getService() {
     }
   }
   );*/
-  alert("OK");
+  let idNew = 6;
+  let newFiltr = {
+    id: idNew,
+    name: 'prediction_new',
+    caption: `Прогноз Новый ${idNew}`
+  };
+  filtrs.push(newFiltr);
+  console.log(filtrs);
 }
 
-const FiltrBtn = () => {
+const FiltrBtn = (props) => {
   return (
-    <div className={s.filtrBtn} type="button" onClick={getService}>
-      Инструмент
+    <div className={s.filtrBtn} type="button" onClick={getService} id={props.id}>
+      <NavLink to="/ylab">
+      {props.caption}
+      </NavLink>
     </div>
   );
 }

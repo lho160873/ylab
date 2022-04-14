@@ -5,10 +5,19 @@
         padding: 20px;
         border-width: 1px;
         border-style: solid;
-        height: 100px;
+        height: 300px;
         width: 200px;
 }
 .serviceItem:hover{
         color: white;   
         background-color: rgb(212, 212, 212);
       }
+
+h2{
+        font-size: x-large;
+}
+.serviceItem a
+{      color: black;
+        text-decoration: none;
+}   
+ 

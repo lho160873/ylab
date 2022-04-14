@@ -2,12 +2,7 @@
   font-size: larger;
 }
 
-.contanerMain {
-  display: flex;
-  flex-flow: column;
-  padding: 60px 30px 30px 30px;
 
-}
 
 .contanerColumn {
   display: flex;
