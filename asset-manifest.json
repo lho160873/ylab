@@ -1,13 +1,20 @@
 {
   "files": {
-    "main.css": "/ylab/static/css/main.337a496e.css",
-    "main.js": "/ylab/static/js/main.defc21d9.js",
+    "main.css": "/ylab/static/css/main.c5449852.chunk.css",
+    "main.js": "/ylab/static/js/main.aead7630.chunk.js",
+    "main.js.map": "/ylab/static/js/main.aead7630.chunk.js.map",
+    "runtime-main.js": "/ylab/static/js/runtime-main.63a0495e.js",
+    "runtime-main.js.map": "/ylab/static/js/runtime-main.63a0495e.js.map",
+    "static/js/2.29e3fab1.chunk.js": "/ylab/static/js/2.29e3fab1.chunk.js",
+    "static/js/2.29e3fab1.chunk.js.map": "/ylab/static/js/2.29e3fab1.chunk.js.map",
     "index.html": "/ylab/index.html",
-    "main.337a496e.css.map": "/ylab/static/css/main.337a496e.css.map",
-    "main.defc21d9.js.map": "/ylab/static/js/main.defc21d9.js.map"
+    "static/css/main.c5449852.chunk.css.map": "/ylab/static/css/main.c5449852.chunk.css.map",
+    "static/js/2.29e3fab1.chunk.js.LICENSE.txt": "/ylab/static/js/2.29e3fab1.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/css/main.337a496e.css",
-    "static/js/main.defc21d9.js"
+    "static/js/runtime-main.63a0495e.js",
+    "static/js/2.29e3fab1.chunk.js",
+    "static/css/main.c5449852.chunk.css",
+    "static/js/main.aead7630.chunk.js"
   ]
 }
