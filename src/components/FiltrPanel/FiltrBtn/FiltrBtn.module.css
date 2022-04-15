@@ -1,27 +1,38 @@
 .filtrBtn {
-    background-color: white;
-    margin: 10px;
-    border-color: silver;
-    text-transform:uppercase;
-    font-size:smaller;
-    color: silver;
-    padding: 10px;
-    border-width: 1px;
-    border-style: solid;
-    border-radius: 20px;
+  background-color: white;
+  margin: 10px;
+  border-color: silver;
+  text-transform: uppercase;
+  font-size: smaller;
+  color: silver;
+  padding: 10px;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 20px;
 }
 
-.filtrBtn:active {
-    color: white;
-    background-color: gray;
-  }
+.filtrBtnCheck {
+  background-color: gray;
+  margin: 10px;
+  border-color: silver;
+  text-transform: uppercase;
+  font-size: smaller;
+  color: white;
+  padding: 10px;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 20px;
+}
 
-.filtrBtn:hover{
-    color: white;   
-    background-color: gray;
-  }
+/*
 
-  .filtrBtn a
-  {      color: black;
-          text-decoration: none;
-  }  
+.filtrBtn:hover {
+  color: white;
+  background-color: gray;
+}
+
+.filtrBtnCheck:hover {
+  color: gray;
+  background-color: white;
+}
+*/

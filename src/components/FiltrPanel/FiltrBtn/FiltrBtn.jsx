@@ -19,14 +19,21 @@ const FiltrBtn = (props) => {
     console.log(filtrs);
     console.log("Выбрана кнопка "+btnRef.current.name)*/
   }
-
-  return (
-    <div className={s.filtrBtn} type="button">      
-      <NavLink to="/ylab" onClick={ addFiltr } ref={btnRef}  id={props.id} name={props.name}>
-      {props.caption}
-      </NavLink>    
+  console.log("FiltrBtn");
+  console.log(props.isActive);
+  if (props.isActive) {
+    return (
+      <div className={s.filtrBtnCheck} type="button" onClick={addFiltr} ref={btnRef} id={props.id} name={props.name}>       
+          {props.caption}
+      </div>
+    );
+  }
+  else return (
+    <div className={s.filtrBtn} type="button" onClick={addFiltr} ref={btnRef} id={props.id} name={props.name}>
+        {props.caption}
     </div>
   );
+
 }
 
 
