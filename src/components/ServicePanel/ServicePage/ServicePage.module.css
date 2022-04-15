@@ -1,0 +1,14 @@
+.servicePage {
+        display: flex;
+        flex-flow: column;
+        background-color: white;
+        border-color: silver;
+        margin: -1px;
+        border-width: 1px;
+        border-style: solid;
+        padding: 60px 30px 30px 30px;
+}
+
+h2{
+        font-size: x-large;
+}

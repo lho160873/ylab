@@ -1,0 +1,6 @@
+.mainPanel {
+    display: flex;
+    flex-flow: column;
+    padding: 60px 30px 30px 30px;
+}
+
