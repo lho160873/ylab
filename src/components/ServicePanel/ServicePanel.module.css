@@ -2,7 +2,7 @@
     display: flex;
     flex-flow: column;
     align-content: space-around;
-    background-color: #eeeeee;
+    /*background-color: #eeeeee;*/
     padding: 10px;
     margin: 10px;
     flex: content;
@@ -21,6 +21,6 @@
     display: flex;
     flex-flow: row wrap;
     align-content: space-around;
-    background-color: #eeeeee;
+    /*background-color: #eeeeee;*/
     flex: content;
 }

@@ -1,6 +1,7 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import s from './ServiceItem.module.css';
+import Icons from '../../Icons/Icons';
 
 
 const ServiceItem = (props) => {
@@ -11,9 +12,12 @@ const ServiceItem = (props) => {
   }
 
   let path = "/servicepage/" + props.name;
+  console.log("ServiceItem");
+  console.log(props.icon);
   return (    
     <div className={s.serviceItem} >
-       <NavLink to={path} onClick={ setIdService } ref={itemRef}  id={props.id}>
+      <Icons id={props.id} name={props.name} icon={props.icon}/>
+      <NavLink to={path} onClick={ setIdService } ref={itemRef}  id={props.id}>      
       <h2>{props.name}</h2>
       <br />{props.description}  
       </NavLink>

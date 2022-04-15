@@ -1,7 +1,7 @@
 .filtrPanel {
     display: flex;
     flex-flow: row;
-    background-color: #eeeeee;
+    /*background-color: #eeeeee;*/
     padding: 10px;
     margin: 10px;
     justify-content: space-between;
@@ -19,5 +19,5 @@
 .filtrpanelBtn {
     display: flex;
     flex-flow: row wrap;
-    background-color: #eeeeee;
+    /*background-color: #eeeeee;*/
 }

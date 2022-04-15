@@ -5,7 +5,8 @@
   text-transform: uppercase;
   font-size: smaller;
   color: silver;
-  padding: 10px;
+  padding-left: 6px;
+  padding-right: 6px;
   border-width: 1px;
   border-style: solid;
   border-radius: 20px;
@@ -18,7 +19,8 @@
   text-transform: uppercase;
   font-size: smaller;
   color: white;
-  padding: 10px;
+  padding-left: 6px;
+  padding-right: 6px;
   border-width: 1px;
   border-style: solid;
   border-radius: 20px;
@@ -35,4 +37,9 @@
   color: gray;
   background-color: white;
 }
-
+.filtrIcon{  
+  width: 24px;
+  height: 24px;  
+  padding: 2px 10px 2px 2px;
+  
+}
