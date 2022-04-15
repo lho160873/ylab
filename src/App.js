@@ -1,20 +1,18 @@
 import './App.css';
 import Header from './components/Header/Header';
 import MainPanel from './components/MainPanel/MainPanel';
-import {BrowserRouter, Route} from 'react-router-dom';
+import {Route} from 'react-router-dom';
 import ServicePage from './components/ServicePanel/ServicePage/ServicePage'
 
 const App = (props) => {
+  
   return (
-    <BrowserRouter>
-    <div className="App">
+    <div>
       <Header />   
-      <Route exact path="/" component={   () => <MainPanel /> }/>   
-      <Route exact path="/ylab" component={   () => <MainPanel /> }/>
-      <Route exact path="/servicepage" component={   () => <ServicePage name={props.name} description={props.description} /> }/>      
+      <Route exact path="/" render={   () => <MainPanel state={props.state} addFiltr={props.addFiltr} setIdService={props.setIdService}/> }/>
+      <Route exact path="/ylab" render={   () => <MainPanel state={props.state} addFiltr={props.addFiltr} setIdService={props.setIdService}/> }/>
+      <Route path="/servicepage" render={   () => <ServicePage state={props.state} getIdService={props.getIdService}/> }/>      
     </div> 
-      
-    </BrowserRouter>
   );
 }
 
