@@ -6,7 +6,7 @@ import Icons from '../Icons/Icons';
 
 const createService = (props) => { 
   let serviceFiltr = props.services.filter( item => item.category==props.name);
-  return  serviceFiltr.map( p => <ServiceItem description={p.description} name={p.name} key={p.id} setIdService={props.setIdService} icon={props.icon} id={p.id}/>);   
+  return  serviceFiltr.map( p => <ServiceItem description={p.description} name={p.name} key={p.id} icon={props.icon} id={p.id}/>);   
 }
 
 const ServicePanel = (props) => {

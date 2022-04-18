@@ -201,8 +201,7 @@ let state = {
           "id": "26",
           "category": "documents"
         }
-      ],
-      currentServiceId:0
+      ]
 }
 
 export let addFiltr = (idFiltr) => {
@@ -227,31 +226,6 @@ export let addFiltr = (idFiltr) => {
     rerenderEntireTree(state);
 }
 
-export let setIdService = (idService) => {
-  /* let newFiltr = {
-       id: idNew,
-       name: "sdfsdf",
-       caption: "sdfasfsdf"
-   };
-   state.filtrs.push(newFiltr);
-   rerenderEntireTree(state);*/
-   console.log("setIdService")
-   console.log(idService)
-   state.currentServiceId = idService;
-}
-
-export let getIdService = (idService) => {
-  /* let newFiltr = {
-       id: idNew,
-       name: "sdfsdf",
-       caption: "sdfasfsdf"
-   };
-   state.filtrs.push(newFiltr);
-   rerenderEntireTree(state);*/
-   console.log("getIdService")
-   console.log(state.currentServiceId)
-   return state.currentServiceId;
-}
 
 
 export default state;

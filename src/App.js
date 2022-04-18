@@ -9,9 +9,10 @@ const App = (props) => {
   return (
     <div>
       <Header />   
-      <Route exact path="/" render={   () => <MainPanel state={props.state} addFiltr={props.addFiltr} setIdService={props.setIdService}/> }/>
-      <Route exact path="/ylab" render={   () => <MainPanel state={props.state} addFiltr={props.addFiltr} setIdService={props.setIdService}/> }/>
-      <Route path="/servicepage" render={   () => <ServicePage state={props.state} getIdService={props.getIdService}/> }/>      
+      <Route exact path="/" render={   () => <MainPanel state={props.state} addFiltr={props.addFiltr} /> }/>
+      <Route exact path="/ylab" render={   () => <MainPanel state={props.state} addFiltr={props.addFiltr} /> }/>
+      <Route path="/servicepage/:name" render={   () => <ServicePage state={props.state} /> } >
+      </Route>      
     </div> 
   );
 }

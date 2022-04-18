@@ -1,10 +1,11 @@
 import React from 'react';
 import s from './ServicePage.module.css';
-import Icons from '../../Icons/Icons';
+import {useParams} from 'react-router-dom';
 
 const ServicePage = (props) => {
-  let currentId = props.getIdService()
-  let currentService=props.state.services.find( item => item.id==currentId )
+  const params = useParams();
+  
+  let currentService=props.state.services.find( item => item.name.replace(/\s+/g, '').toLowerCase()==params.name )
   return (
     <div className={s.servicePage} >      
       <h2>      
