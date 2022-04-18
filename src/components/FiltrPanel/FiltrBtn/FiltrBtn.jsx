@@ -26,7 +26,7 @@ const FiltrBtn = (props) => {
   } else
     return (
       <div
-        className={s.filtrBtn}
+        className={`${s.filtrBtn} ${s.filtrBtnNotCheck}`}
         type="button"
         onClick={addFiltr}
         ref={btnRef}

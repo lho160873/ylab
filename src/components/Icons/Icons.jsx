@@ -4,13 +4,13 @@ import s from './Icons.module.css';
 
 
 const Icons = (props) => {
- 
+
   console.log("Icons");
   console.log(props.id);
- 
+
 
   return (
-         <img src={props.icon} className={s.iconSvg} alt={props.name} />
+    <img src={props.icon} className={s.iconSvg} alt={props.name} />
   );
 
 }

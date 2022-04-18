@@ -12,8 +12,8 @@
     display: flex;
     flex-flow: row;
     align-items: center;
-    background-color:  #f4f4f4;
-    font-size:xx-large;
+    background-color: #f4f4f4;
+    font-size: xx-large;
 }
 
 .filtrpanelBtn {

@@ -6,7 +6,7 @@ const Header = () => {
   return (
     <header>
       <div className={s.header}>
-       <NavLink to="/ylab"> Ylab </NavLink>
+        <NavLink to="/ylab"> Ylab </NavLink>
       </div>
     </header>
   );

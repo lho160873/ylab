@@ -20,19 +20,15 @@
 }
 
 .filtrBtnCheck {
-  background-color: gray;
+  background-color: grey;
   color: white;
 }
 
-.filtrBtn:hover {
+.filtrBtnNotCheck:hover {
   color: white;
-  background-color: gray;
+  background-color: lightgrey;
 }
 
-.filtrBtnCheck:hover {
-  color: gray;
-  background-color: white;
-}
 .filtrIcon {
   width: 24px;
   height: 24px;

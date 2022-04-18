@@ -6,7 +6,8 @@
     padding: 6px;
     position: fixed;
 }
-.header a
-{      color: #C0C0C0;
-        text-decoration: none;
-} 
+
+.header a {
+    color: #C0C0C0;
+    text-decoration: none;
+}
