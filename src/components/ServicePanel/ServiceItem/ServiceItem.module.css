@@ -29,14 +29,28 @@ a {
         text-decoration: none;
 }
 
+
+
+.iconRow {
+        display: flex;
+        flex-flow: row;
+        /*background-color: #eeeeee;*/
+        padding: 0px 0px 10px 0px;
+        margin: 0px;
+        justify-content: space-between;
+        align-items: stretch;
+
+}
+
 .iconSvg {
         width: 24px;
         height: 24px;
-        padding: 2px 10px 2px 2px;
+        padding: 2px;
         cursor: pointer;
 }
 
 .iconFavotite {
+
         width: 24px;
         height: 24px;
         box-sizing: border-box;
