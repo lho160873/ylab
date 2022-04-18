@@ -16,6 +16,9 @@
     background-color:white;
     margin-bottom: 10px;
     background-color: #f4f4f4;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
 }
 
 .servicePanelItem {
