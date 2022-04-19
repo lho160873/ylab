@@ -1,4 +1,3 @@
-import FiltrPanel from "../components/FiltrPanel/FiltrPanel";
 import { rerenderEntireTree } from "../render";
 import annotator from '../icons/annotator.svg';
 import sigmodel from '../icons/sigmodel.svg';

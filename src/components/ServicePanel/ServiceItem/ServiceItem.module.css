@@ -1,67 +1,45 @@
 .serviceItem {
-        background-color: white;
-        border-color: silver;
-        margin: -1px 0px 0px -1px;
-        padding: 20px;
-        border-width: 1px;
-        border-style: solid;
-        height: 200px;
-        width: 300px;
+  background-color: white;
+  border-color: silver;
+  margin: -1px 0px 0px -1px;
+  padding: 20px;
+  border-width: 1px;
+  border-style: solid;
+  height: 200px;
+  width: 300px;
 }
 
-/*
-.serviceItem:hover{
-        color: white;   
-        background-color: rgb(212, 212, 212);
-      }*/
 .serviceItem:hover {
-        border-color: #33cccc;
-        z-index: 1;
+  border-color: #0493ec;
+  z-index: 1;
 }
 
 h2 {
-        font-size: x-large;
-        margin: 0px;
+  font-size: x-large;
+  margin: 0px;
 }
 
 a {
-        color: black;
-        text-decoration: none;
+  color: black;
+  text-decoration: none;
 }
 
-
-
 .iconRow {
-        display: flex;
-        flex-flow: row;
-        /*background-color: #eeeeee;*/
-        padding: 0px 0px 10px 0px;
-        margin: 0px;
-        justify-content: space-between;
-        align-items: stretch;
-
+  display: flex;
+  flex-flow: row;
+  padding: 0px 0px 10px 0px;
+  margin: 0px;
+  justify-content: space-between;
+  align-items: stretch;
 }
 
 .iconSvg {
-        width: 24px;
-        height: 24px;
-        padding: 2px;
-        cursor: pointer;
+  width: 24px;
+  height: 24px;
+  padding: 2px;
+  cursor: pointer;
 }
 
-.iconFavotite {
-
-        width: 24px;
-        height: 24px;
-        box-sizing: border-box;
-        cursor: pointer;
-        background-image: url(../../../icons/star.svg);
-}
-
-.iconFavotiteActive {
-        width: 24px;
-        height: 24px;
-        box-sizing: border-box;
-        cursor: pointer;
-        background-image: url(../../../icons/Vector.svg);
+.iconSvg:hover {
+  fill: #0493ec;
 }

@@ -6,8 +6,8 @@ const createBtn = (props) => {
 
   return props.state.filtrs.map((p) => {
     let isNotEmpty = true;
-    if (p.name === "favorites") {
-      if (props.state.services.find(item => item.isFavorites) == undefined) {
+    if (p.name === 'favorites') {
+      if (props.state.services.find(item => item.isFavorites) === undefined) {
         isNotEmpty = false;
       }
     }
@@ -25,7 +25,7 @@ const createBtn = (props) => {
       );
     }
     else {
-      return ("");
+      return ('');
     }
   });
 
