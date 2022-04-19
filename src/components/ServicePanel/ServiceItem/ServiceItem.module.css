@@ -1,12 +1,13 @@
 .serviceItem {
   background-color: white;
-  border-color: silver;
+  border-color: #D3D7DE;
   margin: -1px 0px 0px -1px;
-  padding: 20px;
+  padding: 24px;
   border-width: 1px;
   border-style: solid;
   height: 200px;
   width: 300px;
+  color: #54575E;
 }
 
 .serviceItem:hover {
@@ -17,6 +18,7 @@
 h2 {
   font-size: x-large;
   margin: 0px;
+  color: black;
 }
 
 a {
