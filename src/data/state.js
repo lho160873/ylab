@@ -251,10 +251,6 @@ export let changeFavorite = (idService) => {
   const key = localStorage.getItem("key");
 
   localStorage.setItem("services", JSON.stringify(state.services));
-  const servicesFromStorage = localStorage.getItem("services");
-  state.services = JSON.parse(servicesFromStorage);
-  console.log(state.services);
-
 
   rerenderEntireTree(state);
 }
