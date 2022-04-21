@@ -1,6 +1,5 @@
 .mainPanel {
-    display: flex;
-    flex-flow: column;
-    padding: 60px 30px 30px 30px;
-    background-color: #f4f4f4;
+  display: flex;
+  flex-flow: column;
+  padding: 60px 30px 30px 30px;
 }

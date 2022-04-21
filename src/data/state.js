@@ -248,12 +248,9 @@ export let addFiltr = (idFiltr) => {
 export let changeFavorite = (idService) => {
   let service = state.services.find(item => item.id == idService);
   service.isFavorites = !service.isFavorites;
-  const key = localStorage.getItem("key");
-
   localStorage.setItem("services", JSON.stringify(state.services));
 
   rerenderEntireTree(state);
 }
-
 
 export default state;

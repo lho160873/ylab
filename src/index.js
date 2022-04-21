@@ -1,6 +1,6 @@
 import { rerenderEntireTree } from "./render";
 import state from "./data/state";
-import 'typeface-roboto'
+import "./index.css";
 
 const servicesFromStorage = localStorage.getItem("services");
 if (servicesFromStorage != null) {

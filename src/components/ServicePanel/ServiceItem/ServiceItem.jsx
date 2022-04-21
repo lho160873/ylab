@@ -24,6 +24,7 @@ const ServiceItem = (props) => {
     if (itemIcon != undefined)
       icon = itemIcon.icon;
   }
+
   return (
     <NavLink to={path} ref={itemRef} id={props.id} className={s.serviceItem}>
       <div className={s.iconRow}>

@@ -12,6 +12,7 @@ const createService = (props) => {
       (item) => item.category === props.name && !item.isFavorites
     );
   }
+
   return serviceFiltr.map((p) => (
     <ServiceItem
       filtrs={props.filtrs}

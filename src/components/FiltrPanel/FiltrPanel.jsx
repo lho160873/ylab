@@ -28,7 +28,6 @@ const createBtn = (props) => {
       return ('');
     }
   });
-
 };
 
 const FiltrPanel = (props) => {

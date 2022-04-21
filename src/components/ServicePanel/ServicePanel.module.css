@@ -2,7 +2,6 @@
   display: flex;
   flex-flow: column;
   align-content: space-around;
-  /*background-color: #eeeeee;*/
   padding: 10px;
   margin: 10px;
   flex: content;
@@ -11,21 +10,19 @@
 .serviceCaption {
   color: #0493ec;
   text-transform: uppercase;
-  background-color: white;
-  margin-bottom: 10px;
-  background-color: #f4f4f4;
+  margin-bottom: 16px;
+  margin-left: 24px;
   display: flex;
   align-items: center;
   cursor: pointer;
-  font-size: 22px;
+  font-size: 20px;
+  font-weight: 500;
   letter-spacing: 0.15px;
-
 }
 
 .servicePanelItem {
   display: flex;
   flex-flow: row wrap;
   align-content: space-around;
-  /*background-color: #eeeeee;*/
   flex: content;
 }

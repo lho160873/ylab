@@ -1,13 +1,19 @@
 .header {
     float: left;
-    background-color: #404042;
-    color: #C0C0C0;
+    background-color: #202226;
+    height: 48px;
     width: 100%;
-    padding: 6px;
     position: fixed;
+    z-index: 99;
+    display: flex;
+    align-items: center;
 }
 
 .header a {
-    color: #C0C0C0;
+    color: #b9bec9;
     text-decoration: none;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    padding: 16px;
 }

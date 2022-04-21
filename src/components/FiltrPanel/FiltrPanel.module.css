@@ -1,24 +1,24 @@
 .filtrPanel {
-    display: flex;
-    flex-flow: row;
-    /*background-color: #eeeeee;*/
-    padding: 10px;
-    margin: 10px;
-    justify-content: space-between;
-    align-items: stretch;
+  display: flex;
+  flex-flow: row;
+  padding: 10px;
+  margin: 10px;
+  justify-content: space-between;
+  align-items: stretch;
 }
 
 .filtrpanelCaption {
-    display: flex;
-    flex-flow: row;
-    align-items: center;
-    background-color: #f4f4f4;
-    font-size: 34px;
-    letter-spacing: 0.25px;
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  font-size: 34px;
+  font-weight: 400;
+  letter-spacing: 0.25px;
+  margin-left: 24px;
 }
 
 .filtrpanelBtn {
-    display: flex;
-    flex-flow: row wrap;
-    /*background-color: #eeeeee;*/
+  margin-left: 16px;
+  display: flex;
+  flex-flow: row wrap;
 }
