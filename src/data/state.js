@@ -6,6 +6,7 @@ import oligoDesigner from '../icons/oligo designer.svg';
 import siScorer from '../icons/si scorer.svg';
 import star from '../icons/star.svg';
 
+
 let state = {
   filtrs: [
     {
@@ -239,13 +240,22 @@ let state = {
 
 export let addFiltr = (idFiltr) => {
   let filtr = state.filtrs.find(item => item.id == idFiltr);
-  filtr.isActive = !filtr.isActive
+  filtr.isActive = !filtr.isActive;
   rerenderEntireTree(state);
+
 }
 
 export let changeFavorite = (idService) => {
   let service = state.services.find(item => item.id == idService);
   service.isFavorites = !service.isFavorites;
+  const key = localStorage.getItem("key");
+
+  localStorage.setItem("services", JSON.stringify(state.services));
+  const servicesFromStorage = localStorage.getItem("services");
+  state.services = JSON.parse(servicesFromStorage);
+  console.log(state.services);
+
+
   rerenderEntireTree(state);
 }
 
