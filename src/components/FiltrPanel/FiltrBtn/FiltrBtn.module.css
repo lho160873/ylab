@@ -23,11 +23,9 @@
 
 .filtrBtnCheck {
   background-color: #d3d7de;
-  /* color: white; */
 }
 
 .filtrBtnNotCheck:hover {
-  /* color: white; */
   background-color: #e9ecf2;
 }
 
