@@ -12,7 +12,7 @@ let state = {
     {
       id: 0,
       name: 'favorites',
-      caption: 'Изранное',
+      caption: 'Избранное',
       isActive: false,
       icon: star
     },
