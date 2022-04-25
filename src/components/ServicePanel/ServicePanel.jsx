@@ -23,7 +23,7 @@ const createService = (props) => {
       key={p.id}
       icon={props.icon}
       id={p.id}
-      changeFavorite={props.changeFavorite}
+      dispatch={props.dispatch}
     />
   ));
 };

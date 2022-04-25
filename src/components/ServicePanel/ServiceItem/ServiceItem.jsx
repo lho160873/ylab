@@ -15,8 +15,8 @@ const ServiceItem = (props) => {
     e.preventDefault();
     e.stopPropagation();
 
-    props.changeFavorite(iconRef.current.id);
-  };
+    props.dispatch({ type: 'CHANGE-FAVORITE', idService: iconRef.current.id });
+  }
 
   let icon = props.icon;
   if (props.categoryCaption === 'favorites') {

@@ -8,6 +8,7 @@
   height: 200px;
   width: 300px;
   color: #54575E;
+  overflow: hidden;
 }
 
 .serviceItem:hover {

@@ -6,7 +6,7 @@ const FiltrBtn = (props) => {
   let btnRef = React.createRef();
 
   let addFiltr = () => {
-    props.addFiltr(btnRef.current.id);
+    props.dispatch({ type: 'ADD-FILTR', idFiltr: btnRef.current.id })
   };
 
   if (props.isActive) {
