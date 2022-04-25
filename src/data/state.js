@@ -7,7 +7,8 @@ import star from '../icons/star.svg';
 
 
 //подписчик (наблюдатель)
-
+const ADD_FILTR = 'ADD-FILTR';
+const CHANGE_FAVORITE = 'CHANGE-FAVORITE';
 
 let store = {
   _state: {
@@ -255,12 +256,12 @@ let store = {
     this._state.services = services;
   },
   dispatch(action) {  // { type: 'ADD-POST'}
-    if (action.type === 'ADD-FILTR') {
+    if (action.type === ADD_FILTR) {
       let filtr = this._state.filtrs.find(item => item.id == action.idFiltr);
       filtr.isActive = !filtr.isActive;
       this._callSubscriber(this._state);
     }
-    else if (action.type === 'CHANGE-FAVORITE') {
+    else if (action.type === CHANGE_FAVORITE) {
       let service = this._state.services.find(item => item.id == action.idService);
       service.isFavorites = !service.isFavorites;
       localStorage.setItem("services", JSON.stringify(this._state.services));
@@ -269,6 +270,9 @@ let store = {
     }
   }
 }
+
+export const addFiltrActionCreator = (value) => ({ type: ADD_FILTR, idFiltr: value })
+export const changeFavoriteActionCreator = (value) => ({ type: CHANGE_FAVORITE, idService: value })
 
 export default store;
 

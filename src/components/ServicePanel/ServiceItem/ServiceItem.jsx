@@ -4,6 +4,7 @@ import s from "./ServiceItem.module.css";
 import Icons from "../../Icons/Icons";
 import { ReactComponent as Vector } from "../../../icons/vector.svg";
 import { ReactComponent as Star } from "../../../icons/star.svg";
+import { changeFavoriteActionCreator } from "../../../data/state";
 
 const ServiceItem = (props) => {
   let itemRef = React.createRef();
@@ -14,8 +15,8 @@ const ServiceItem = (props) => {
   let changeFavorite = (e) => {
     e.preventDefault();
     e.stopPropagation();
-
-    props.dispatch({ type: 'CHANGE-FAVORITE', idService: iconRef.current.id });
+    let action = changeFavoriteActionCreator(iconRef.current.id);
+    props.dispatch(action);
   }
 
   let icon = props.icon;

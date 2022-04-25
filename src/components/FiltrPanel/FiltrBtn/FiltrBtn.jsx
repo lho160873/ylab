@@ -1,12 +1,14 @@
 import React from "react";
 import s from "./FiltrBtn.module.css";
 import Icons from "../../Icons/Icons";
+import { addFiltrActionCreator } from "../../../data/state";
 
 const FiltrBtn = (props) => {
   let btnRef = React.createRef();
 
   let addFiltr = () => {
-    props.dispatch({ type: 'ADD-FILTR', idFiltr: btnRef.current.id })
+    let action = addFiltrActionCreator(btnRef.current.id);
+    props.dispatch(action)
   };
 
   if (props.isActive) {
