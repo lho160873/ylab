@@ -5,13 +5,12 @@ import { Route } from 'react-router-dom';
 import ServicePage from './components/ServicePanel/ServicePage/ServicePage'
 //LKhorosheva
 const App = (props) => {
-
   return (
     <div>
       <Header />
-      <Route exact path="/" render={() => <MainPanel state={props.state} dispatch={props.dispatch} />} />
-      <Route exact path="/ylab" render={() => <MainPanel state={props.state} dispatch={props.dispatch} />} />
-      <Route path="/servicepage/:name" render={() => <ServicePage state={props.state} />} >
+      <Route exact path="/" render={() => <MainPanel state={props.state.filtrPage} dispatch={props.dispatch} />} />
+      <Route exact path="/ylab" render={() => <MainPanel state={props.state.filtrPage} dispatch={props.dispatch} />} />
+      <Route path="/servicepage/:name" render={() => <ServicePage state={props.state.filtrPage} />} >
       </Route>
     </div>
   );
