@@ -4,7 +4,7 @@ import s from "./ServiceItem.module.css";
 import Icons from "../../Icons/Icons";
 import { ReactComponent as Vector } from "../../../icons/vector.svg";
 import { ReactComponent as Star } from "../../../icons/star.svg";
-import { changeFavoriteActionCreator } from "../../../data/state";
+import { changeFavoriteActionCreator } from "../../../data/filtr-reducer";
 
 const ServiceItem = (props) => {
   let itemRef = React.createRef();
