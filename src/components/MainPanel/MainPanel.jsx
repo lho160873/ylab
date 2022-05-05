@@ -4,23 +4,26 @@ import ServicePanel from '../ServicePanel/ServicePanel';
 import FiltrPanel from '../FiltrPanel/FiltrPanel';
 
 const createServicePanel = (props) => {
-  let stateFiltr = props.state.filtrs.filter(item => item.isActive === true);
+  //let state = props.store.getState().filtrPage;
+  let state = props.state;
+  let stateFiltr = state.filtrs.filter(item => item.isActive === true);
 
   if (stateFiltr.length === 1 && stateFiltr[0].name === 'favorites') {
-    if (props.state.services.find(item => item.isFavorites) === undefined)
-      return props.state.filtrs.map(p => <ServicePanel filtrs={props.state.filtrs} services={props.state.services} name={p.name} caption={p.caption} icon={p.icon} key={p.id} id={p.id} dispatch={props.dispatch} />);
+    if (state.services.find(item => item.isFavorites) === undefined)
+      return state.filtrs.map(p => <ServicePanel filtrs={state.filtrs} services={state.services} name={p.name} caption={p.caption} icon={p.icon} key={p.id} id={p.id} onChangeFavoriteAction={props.onChangeFavoriteAction} />);
   }
 
   if (stateFiltr.length > 0)
-    return stateFiltr.map(p => <ServicePanel filtrs={props.state.filtrs} services={props.state.services} name={p.name} caption={p.caption} icon={p.icon} key={p.id} id={p.id} dispatch={props.dispatch} />);
+    return stateFiltr.map(p => <ServicePanel filtrs={state.filtrs} services={state.services} name={p.name} caption={p.caption} icon={p.icon} key={p.id} id={p.id} onChangeFavoriteAction={props.onChangeFavoriteAction} />);
   else
-    return props.state.filtrs.map(p => <ServicePanel filtrs={props.state.filtrs} services={props.state.services} name={p.name} caption={p.caption} icon={p.icon} key={p.id} id={p.id} dispatch={props.dispatch} />);
+    return state.filtrs.map(p => <ServicePanel filtrs={state.filtrs} services={state.services} name={p.name} caption={p.caption} icon={p.icon} key={p.id} id={p.id} onChangeFavoriteAction={props.onChangeFavoriteAction} />);
 }
 
 const MainPanel = (props) => {
+  //let state = props.store.getState().filtrPage;
   return (
     <div className={s.mainPanel}>
-      <FiltrPanel state={props.state} dispatch={props.dispatch} />
+      <FiltrPanel state={props.state} onAddFiltrAction={props.onAddFiltrAction} />
       {createServicePanel(props)}
     </div>
   );

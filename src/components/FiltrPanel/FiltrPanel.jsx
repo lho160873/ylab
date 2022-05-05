@@ -20,7 +20,7 @@ const createBtn = (props) => {
           name={p.name}
           isActive={p.isActive}
           icon={p.icon}
-          dispatch={props.dispatch}
+          onAddFiltrAction={props.onAddFiltrAction}
         />
       );
     }

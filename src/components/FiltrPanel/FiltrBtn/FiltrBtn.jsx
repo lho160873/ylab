@@ -1,14 +1,13 @@
 import React from "react";
 import s from "./FiltrBtn.module.css";
 import Icons from "../../Icons/Icons";
-import { addFiltrActionCreator } from "../../../data/filtr-reducer";
 
 const FiltrBtn = (props) => {
   let btnRef = React.createRef();
 
   let addFiltr = () => {
-    let action = addFiltrActionCreator(btnRef.current.id);
-    props.dispatch(action)
+    //let action = addFiltrActionCreator(btnRef.current.id);
+    props.onAddFiltrAction(btnRef.current.id)
   };
 
   if (props.isActive) {
