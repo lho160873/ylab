@@ -249,22 +249,27 @@ let initialState =
     services: servicesData
 }
 
-const filtrReducer =
-    (state = initialState, action) => {
-        switch (action.type) {
-            case ADD_FILTR:
-                let filtr = state.filtrs.find(item => item.id == action.idFiltr);
-                filtr.isActive = !filtr.isActive;
-                return state;
-            case CHANGE_FAVORITE:
-                let service = state.services.find(item => item.id == action.idService);
-                service.isFavorites = !service.isFavorites;
-                localStorage.setItem("services", JSON.stringify(state.services));
-                return state;
-            default:
-                return state;
+const filtrReducer = (state = initialState, action) => {
+    switch (action.type) {
+        case ADD_FILTR: {
+            let stateCopy = { ...state };
+            stateCopy.filtrs = [...state.filtrs];
+            let filtr = stateCopy.filtrs.find(item => item.id == action.idFiltr);
+            filtr.isActive = !filtr.isActive;
+            return stateCopy;
         }
+        case CHANGE_FAVORITE: {
+            let stateCopy = { ...state };
+            stateCopy.services = [...state.services];
+            let service = stateCopy.services.find(item => item.id == action.idService);
+            service.isFavorites = !service.isFavorites;
+            localStorage.setItem("services", JSON.stringify(stateCopy.services));
+            return stateCopy;
+        }
+        default:
+            return state;
     }
+}
 
 export const addFiltrActionCreator = (value) => ({ type: ADD_FILTR, idFiltr: value })
 export const changeFavoriteActionCreator = (value) => ({ type: CHANGE_FAVORITE, idService: value })

@@ -4,10 +4,10 @@ import FiltrBtn from "./FiltrBtn/FiltrBtn";
 
 const createBtn = (props) => {
 
-  return props.state.filtrs.map((p) => {
+  return props.filtrPage.filtrs.map((p) => {
     let isNotEmpty = true;
     if (p.name === 'favorites') {
-      if (props.state.services.find(item => item.isFavorites) === undefined) {
+      if (props.filtrPage.services.find(item => item.isFavorites) === undefined) {
         isNotEmpty = false;
       }
     }
