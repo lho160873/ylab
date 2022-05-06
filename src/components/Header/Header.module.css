@@ -1,4 +1,4 @@
-.header {
+.headerPanel {
     float: left;
     background-color: #202226;
     height: 48px;
@@ -6,14 +6,41 @@
     position: fixed;
     z-index: 99;
     display: flex;
-    align-items: center;
+    flex-flow: row;
+    align-items: stretch;
+    justify-content: space-between;
 }
 
-.header a {
+.headerCaption {
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    font-size: 34px;
+    font-weight: 400;
+    letter-spacing: 0.25px;
+    margin-left: 24px;
+}
+
+.headerCaption a {
     color: #b9bec9;
     text-decoration: none;
     font-weight: 700;
     font-size: 18px;
-    line-height: 24px;
+
+    padding: 16px;
+}
+
+.headerBtn {
+    color: #b9bec9;
+    margin-left: 16px;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.headerBtn a {
+    color: #b9bec9;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 14px;
     padding: 16px;
 }

@@ -1,0 +1,25 @@
+.userPhoto {
+    width: 100px;
+    height: 100px;
+}
+
+.selectedPage {
+    font-weight: bold;
+    cursor: pointer;
+    padding: 6px;
+}
+
+.numPage {
+    cursor: pointer;
+    padding: 6px;
+}
+
+.userPanel {
+    display: flex;
+    flex-flow: column;
+    background-color: white;
+    border-color: silver;
+    border-width: 2px;
+    border-style: solid;
+    padding: 60px 30px 30px 30px;
+}
