@@ -6,8 +6,9 @@ import { setUserProfile } from "../../data/profile-reducer";
 import { withRouter } from "react-router-dom";
 
 class ProfileContainer extends React.Component {
-
+    //состояние, когда компонента уже вмонтирована
     componentDidMount() {
+        //получаем данные из URL
         let userId = this.props.match.params.userId;
         if (!userId) {
             userId = 2;
