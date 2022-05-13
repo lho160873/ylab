@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/ylab/static/css/main.11382cb6.chunk.css",
-    "main.js": "/ylab/static/js/main.eef53774.chunk.js",
-    "main.js.map": "/ylab/static/js/main.eef53774.chunk.js.map",
+    "main.js": "/ylab/static/js/main.693b54e5.chunk.js",
+    "main.js.map": "/ylab/static/js/main.693b54e5.chunk.js.map",
     "runtime-main.js": "/ylab/static/js/runtime-main.63a0495e.js",
     "runtime-main.js.map": "/ylab/static/js/runtime-main.63a0495e.js.map",
-    "static/js/2.eef9f26b.chunk.js": "/ylab/static/js/2.eef9f26b.chunk.js",
-    "static/js/2.eef9f26b.chunk.js.map": "/ylab/static/js/2.eef9f26b.chunk.js.map",
+    "static/js/2.4906949b.chunk.js": "/ylab/static/js/2.4906949b.chunk.js",
+    "static/js/2.4906949b.chunk.js.map": "/ylab/static/js/2.4906949b.chunk.js.map",
     "index.html": "/ylab/index.html",
     "static/css/main.11382cb6.chunk.css.map": "/ylab/static/css/main.11382cb6.chunk.css.map",
-    "static/js/2.eef9f26b.chunk.js.LICENSE.txt": "/ylab/static/js/2.eef9f26b.chunk.js.LICENSE.txt",
+    "static/js/2.4906949b.chunk.js.LICENSE.txt": "/ylab/static/js/2.4906949b.chunk.js.LICENSE.txt",
     "static/media/annotator.ed00d0cc.svg": "/ylab/static/media/annotator.ed00d0cc.svg",
     "static/media/oligo designer.66e862e0.svg": "/ylab/static/media/oligo designer.66e862e0.svg",
     "static/media/preloader.5788b05c.svg": "/ylab/static/media/preloader.5788b05c.svg",
@@ -22,8 +22,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.63a0495e.js",
-    "static/js/2.eef9f26b.chunk.js",
+    "static/js/2.4906949b.chunk.js",
     "static/css/main.11382cb6.chunk.css",
-    "static/js/main.eef53774.chunk.js"
+    "static/js/main.693b54e5.chunk.js"
   ]
 }
