@@ -15,7 +15,7 @@ const Header = (props) => {
           ) : (
             <NavLink to={"/login"}>Login</NavLink>
           )}
-          <NavLink to="/users">Пользователи all_2</NavLink>
+          <NavLink to="/users">Пользователи br_1</NavLink>
         </div>
       </div>
     </header>
