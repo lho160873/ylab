@@ -10,8 +10,12 @@ const Header = (props) => {
           <NavLink to="/ylab">Ylab-2</NavLink>
         </div>
         <div className={s.headerBtn}>
-          {props.isAuth ? <NavLink to={'/' + props.login}>{props.login}</NavLink> : <NavLink to={'/login'}>Login</NavLink>}
-          <NavLink to="/users">Пользователи</NavLink>
+          {props.isAuth ? (
+            <NavLink to={"/" + props.login}>{props.login}</NavLink>
+          ) : (
+            <NavLink to={"/login"}>Login</NavLink>
+          )}
+          <NavLink to="/users">Пользователи all</NavLink>
         </div>
       </div>
     </header>
