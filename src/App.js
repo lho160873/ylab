@@ -5,7 +5,7 @@ import { Route } from 'react-router-dom';
 import ServicePageContainer from './components/ServicePanel/ServicePage/ServicePageContainer'
 import UsersContainer from './components/Users/UsersContainer';
 import ProfileContainer from './components/Profile/ProfileContainer'
-//LKhorosheva 2
+//LKhorosheva 3
 const App = () => {
   return (
     <div>
